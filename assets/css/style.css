@@ -318,7 +318,7 @@ Home Page Style Start
 }
 .tayolored-loyalti-strategy{
     background:#F2F3F3;
-    padding:100px 0;
+    padding:100px 0 20px;
     margin-top: 35px;
 }
 .tayolored-loyalti-strategy .container{
@@ -342,7 +342,7 @@ Home Page Style Start
 .strategy-wrapper{
     border-radius: 123.5px;
     background-color: #ebebeb;
-    padding:20px 50px;
+    padding: 53px 50px 55px;
     text-align: center;
 }
 .strategy-box span.title{
@@ -379,7 +379,7 @@ Home Page Style Start
 }
 .strategy-box.color4 .round.active {
     background: url(../../assets/images/color4.png);
-    width: 70px;
+    width: 80px;
     height: 70px;
     position: relative;
     top: -5.3px;
@@ -396,7 +396,7 @@ Home Page Style Start
     text-align: center;
     color: #3f3f3f;
     margin:0;
-    margin-top:10px;
+    margin-top:20px;
 }
 .strategy-box{
     position: relative;
@@ -442,7 +442,8 @@ Home Page Style Start
 }
 .strategy-btn{
     text-align:center;
-    margin-top:10px;
+    margin-top:15px;
+    margin-bottom: 15px;
 }
 .strategy-btn a{
     display:inline-block;
@@ -457,16 +458,16 @@ Home Page Style Start
     text-decoration: none;
 }
 .multichannel-section{
-    margin-top:100px;
+    margin-top: 130px;
 }
 .multichannel-section .content-box h1 {
-    margin-top: 110px;
+    margin-top: 63px;
 }
 .branded-section {
-    margin-top:50px;
+    margin-top: 40px;
 }
 .branded-section .container{
-    max-width:1745px;
+    max-width:1796px;
 }
 .branded-box.content{
     background:#F2F3F3;
@@ -477,28 +478,40 @@ Home Page Style Start
     float:left;
 }
 .branded-box.first-box{
-    width:29.169%;
+    width: 28.82219705549264%;
+    margin-left: 5.039637599093998%;
 }
 .branded-box.first-box img {
-    height: 817px;
+    /*height: 817px;*/
     position: relative;
-    top: 25px;
     width: 100%;
 }
 .branded-box.content-box{
-    width:33.295%;
-    height:860px;
+    width:32.78595696489241%;
+    padding: 230px 75px 223px;
+    /*height:860px;*/
     position: relative;
-    top:-15px;
     text-align: center;
 }
-.branded-box .third-box{
-    width:33.696%;
+.branded-box.third-box{
+    width:33.35220838052095%;
 }
 .branded-box .third-box img{
     height:846px;
 }
 
+
+/* Markting suite section style */
+.markiting-suite-section{
+    margin-top: 144px;
+}
+
+
+/* How to increase section */
+.how-to-increase-section{
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
 
 
 
