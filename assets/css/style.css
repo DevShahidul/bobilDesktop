@@ -38,6 +38,11 @@ ul,li{
     vertical-align: bottom;
     display: table-cell;
 }
+
+.main-wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 /*
 ==============================
 Global Style End
@@ -51,7 +56,7 @@ Header Style Start
 */
 
 .site-header{
-    padding:40px 40px 30px;
+    padding:35px 40px 25px;
 }
 .navbar-expand-lg .navbar-nav{
     position: relative;
@@ -63,7 +68,7 @@ Header Style Start
     color: #302f2f;
     text-decoration: none;
     display: block;
-    padding:16px 15px;
+    padding:16px 14px;
     border-top:3px solid transparent;
     transition:0.5s all ease;
     position: relative;
@@ -122,9 +127,14 @@ Home Page Style Start
 
 .hero-section{
     min-height: 465px;
-    padding: 165px 0 161px;
+    padding: 153px 0 140px;
     width: calc(100% - 80px);
 }
+
+.hero-section .offset-md-1{
+    margin-left: 5%;
+}
+
 .hero-section .container-fluid,
 .hero-section .row{
     height:100%;
@@ -179,7 +189,7 @@ Home Page Style Start
     max-width:1470px;
 }
 .hero-bottom{
-    padding:155px 0 170px;
+    padding: 155px 0 150px;
 }
 .section-title h1{
     font-size: 60px;
@@ -190,7 +200,7 @@ Home Page Style Start
 }
 .relation-box{
     text-align: center;
-    margin-top:85px;
+    margin-top: 95px;
     transition:0.5s all ease;
     padding: 0px 40px 75px;
 }
@@ -213,14 +223,16 @@ Home Page Style Start
 }
 
 .partner-section{
-    padding-bottom: 205px;
+    padding-bottom: 173px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .partner-title{
     background-color: #1875d2;
     text-align: center;
     position: relative;
-    margin-bottom:100px;
+    margin-bottom: 30px;
 }
 .partner-title::after {
     position: absolute;
@@ -251,10 +263,14 @@ Home Page Style Start
 .partner-box:hover{
     box-shadow: 0px 20px 20px -10px rgba(0,0,0,0.2);
 }
-.partner-section .container-fluid,
+/*.partner-section .container-fluid,
 .multichannel-section .container-fluid{
     padding-left:100px;
     padding-right:100px;
+}*/
+.multichannel-section .container-fluid{
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .feature-box .section-title{
     text-align: center;
@@ -307,8 +323,8 @@ Home Page Style Start
     color: #302f2f;
 }
 .row-eq-height{
-    height:914px;
-    margin-bottom:100px;
+    height: 884px;
+    margin-bottom: 150px;
 }
 .row-eq-height.h-919{
     height:960px;
@@ -318,8 +334,11 @@ Home Page Style Start
 }
 .tayolored-loyalti-strategy{
     background:#F2F3F3;
-    padding:100px 0 20px;
+    padding:100px 0px 20px;
     margin-top: 35px;
+    width: -webkit-calc(100% - 80px);
+    width: calc(100% - 80px);
+    margin: 0 auto;
 }
 .tayolored-loyalti-strategy .container{
     max-width:1328px;
@@ -465,6 +484,8 @@ Home Page Style Start
 }
 .branded-section {
     margin-top: 40px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .branded-section .container{
     max-width:1796px;
@@ -511,20 +532,80 @@ Home Page Style Start
 .how-to-increase-section{
     background-position: right bottom;
     background-repeat: no-repeat;
+    color: #302f2f;
 }
 
+.how-to-increase-section h3{
+    font-size: 44px;
+    line-height: 1.09;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
 
+.how-to-increase-section h3 span{
+    color: #1875d2;
+}
+.how-to-increase-section .lead{
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 35px;
+    font-weight: 600;
+    max-width: 755px;
+}
 
+.how-to-increase-section ul li{
+    font-size: 21px;
+    line-height: 2;
+    font-weight: 300;
+}
 
+/* Autonomous section style */
+.autonomous-interactions{
+    padding: 0 25px;
+    margin-top: 27px;
+}
+.mobile-featuere-wrap{
+    position: relative;
+    z-index: 1;
+    background-color: #f2f2f2;
+}
 
+.mobile-featuere-wrap  .col-lg-8{
+    padding-top: 90px;
+}
+
+.mobile-featuere-wrap .content-box{
+    background-color: transparent;
+}
+.mobile-featuere-wrap:before{
+    content: url(../images/plane.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 55.0207468879668%;
+    z-index: -1;
+}
+.mobile-featuere-wrap:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 46.55601659751037%;
+    height: 100%;
+    background-image: url(../images/feature-8-shadow.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
+}
 /*
 ==============================
 Home Page Style End 
 ==============================
 */
-
-
-
 
 
 
@@ -534,12 +615,254 @@ Footer Style Start
 ==============================
 */
 
+.footer-wrapper{
+    margin-top: 232px;
+    padding: 84px 65px 180px;
+    position: relative;
+}
 
+.footer-wrapper:before{
+    content: "";
+    left: 40px; 
+    right: 40px;
+    height: 4px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+}
 
+.footer-logo{
+    width: 51px !important;
+    margin-right: 41px;
+    float: left;
+    padding: 0;
+}
+.widget-content{
+    float: left;
+    width: -webkit-calc(100% - 92px) !important;
+    width: calc(100% - 92px) !important;
+    padding: 0;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
 
+.social-nav{
+    margin-top: 15px;
+    line-height: inherit;
+    text-align: left;
+    margin-left: -10px;
+}
 
+.yotpo-logo{
+    margin-left: -27px;
+    margin-top: 35px
+}
+
+.social-nav a{
+    display: inline-block;
+    margin: 10px 6px 0 10px
+}
+
+.footer-wrapper .col-auto{
+    width: 15.23702031602709%;
+}
+.footer-wrapper .col-auto:first-child{
+    width: 16.08352144469526%;
+}
+.footer-wrapper .col-auto:nth-child(3){
+    width: 22.46049661399549%;
+}
+.footer-wrapper .col-auto:nth-child(4){
+    width: 23.53273137697517%;
+}
+
+.footer-wrapper .col-auto:last-child{
+    width: 21.21896162528217%;
+}
+
+.footer-widget h5{
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+.footer-widget ul li{
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 300;
+}
+.footer-widget ul li a{
+    color: #302f2f;
+}
 /*
 ==============================
 Footer Style End
 ==============================
 */
+
+
+/*
+==============================
+Responsive style 
+==============================
+*/
+
+@media only screen and (max-width: 991px) {
+    
+    .site-btn.login{
+        margin-left: 15px;
+    }
+    
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .partner-section{
+        padding-bottom: 100px;
+    }
+    
+    .row-eq-height.h-886,
+    .row-eq-height,
+    .img-box img{
+        height: auto;
+    }
+    
+    .branded-box.first-box,
+    .branded-box.third-box{
+        width: 50%;
+        margin: 0;
+    }
+    
+    .branded-box.content-box{
+        width: 100%;
+    }
+    
+    .branded-section .container{
+        flex-flow: row wrap;
+    }
+    .branded-box.content-box{
+        order: 3;
+    }
+    .branded-box.first-box{
+        order: 2;
+    }
+    
+    .content-box{
+        text-align: center !important;
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+    
+    
+    /*
+    ==============================
+    Footer Style End
+    ==============================
+    */
+    .footer-wrapper{
+        margin-top: 100px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    
+    .footer-wrapper .col-auto,
+    .footer-wrapper .col-auto:first-child,
+    .footer-wrapper .col-auto:nth-child(3),
+    .footer-wrapper .col-auto:nth-child(4){
+        width: 33.33333333333333%;
+    }
+    
+    .footer-widget{
+        margin-top: 50px;
+    }
+    
+    .footer-wrapper .col-auto:last-child{
+        width: 66.66666666666667%;
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    
+    .branded-section .container{
+        align-items: center !important;
+    }
+    
+    .branded-box.content-box{
+        width: 60%;
+        padding: 100px 55px 100px;
+    }
+    .content-box p br{
+        display: none;
+    }
+    
+    .how-to-increase-section{
+        background-position: right -350px top;
+    }
+    
+    .content-box{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .content-box h1{
+        font-size: 40px;
+    }
+    
+    .img-box img{
+        height: auto;
+    }
+    .img-box .display-table-bottom{
+        vertical-align: middle;
+    }
+    
+    .row-eq-height{
+        height: 800px;
+    }
+    
+    
+    /* Footer style */
+    .footer-wrapper{
+        margin-top: 130px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+ 
+    .footer-wrapper .col-auto,
+    .footer-wrapper .col-auto:first-child,
+    .footer-wrapper .col-auto:nth-child(3),
+    .footer-wrapper .col-auto:nth-child(4){
+        width: 25%;
+    }
+    
+    .footer-widget{
+        margin-top: 50px;
+    }
+    
+    .footer-wrapper .col-auto:last-child {
+        width: 100%;
+    }
+    
+    .widget-content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .social-nav{
+        text-align: center;
+    }
+    
+    .widget-content p,
+    .social-nav{
+        width: calc(100% - 300px);
+        float: left;
+    }
+    
+    .yotpo-logo{
+        float: right;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
