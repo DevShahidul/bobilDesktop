@@ -715,6 +715,19 @@ Footer Style Start
 .footer-widget ul li a{
     color: #302f2f;
 }
+
+.footer-partners{
+    margin-top: 65px;
+    margin-right: -55px;
+}
+
+.footer-partners img{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px 11px 0 0;
+}
+
+
 /*
 ==============================
 Footer Style End
@@ -760,12 +773,19 @@ Responsive style
     }
     
     .branded-section .container{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     }
     .branded-box.content-box{
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
         order: 3;
     }
     .branded-box.first-box{
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
     }
     
@@ -804,6 +824,10 @@ Responsive style
     
     .footer-wrapper .col-auto:last-child{
         width: 66.66666666666667%;
+    }
+    
+    .footer-partners{
+        margin-right: 0;
     }
 }
 
@@ -880,13 +904,19 @@ Responsive style
     
     .widget-content p,
     .social-nav{
-        width: calc(100% - 300px);
+        width: -webkit-calc(100% - 400px);
+        width: calc(100% - 400px);
         float: left;
     }
     
     .yotpo-logo{
         float: right;
         margin-left: 0;
+        margin-top: 0;
+        max-height: 171px;
+    }
+    
+    .footer-partners{
         margin-top: 0;
     }
 }
